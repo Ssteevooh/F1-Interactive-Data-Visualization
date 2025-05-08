@@ -1,6 +1,4 @@
-from dash import Dash, html
+from dash import Dash
 
-app = Dash(__name__, suppress_callback_exceptions=True)
+app = Dash(__name__)
 app.title = "F1 Interactive Dashboard"
-
-server = app.server
