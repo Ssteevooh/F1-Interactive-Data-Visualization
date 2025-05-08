@@ -1,4 +1,3 @@
-from dash import Dash
+from app import app
 
-app = Dash(__name__)
-app.title = "F1 Interactive Dashboard"
+server = app.server
