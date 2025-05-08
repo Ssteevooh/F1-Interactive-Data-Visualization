@@ -1,5 +1,7 @@
-from dash import html, dcc
-from server import app
+from dash import Dash, html, dcc
+
+app = Dash(__name__, suppress_callback_exceptions=True)
+app.title = "F1 Interactive Dashboard"
 
 from layouts.driver_layout import driver_layout
 from layouts.constructor_layout import constructor_layout
