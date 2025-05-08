@@ -2,7 +2,7 @@ from dash import callback, Input, Output
 import plotly.express as px
 from utils.load_data import grid_data
 
-callback(
+@callback(
     Output('grid-vs-position-plot', 'figure'),
     Input('grid-driver-selector', 'value')
 )
