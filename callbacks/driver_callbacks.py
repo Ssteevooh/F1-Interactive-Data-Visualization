@@ -1,9 +1,8 @@
-from dash import Input, Output
+from dash import callback, Input, Output
 import plotly.express as px
-from server import app
 from utils.load_data import driver_yearly, total_driver_points
 
-@app.callback(
+@callback(
     Output('driver-performance-plot', 'figure'),
     Input('driver-selector', 'value'),
     Input('top-n-driver-slider', 'value')

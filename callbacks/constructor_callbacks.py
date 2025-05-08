@@ -1,9 +1,8 @@
-from dash import Input, Output
+from dash import callback, Input, Output
 import plotly.express as px
-from server import app
 from utils.load_data import constructor_yearly, total_constructor_points
 
-@app.callback(
+callback(
     Output('constructor-performance-plot', 'figure'),
     Input('constructor-selector', 'value'),
     Input('top-n-constructor-slider', 'value')
